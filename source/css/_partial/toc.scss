@@ -1,0 +1,37 @@
+#main {
+    #toc-aside {
+        float: right;
+        #toc-nav {
+            padding-left: 15px;
+            max-width: 13%;
+
+            .post-toc {
+                display: inline-block;
+
+                .post-toc-shrink {
+                    display: none;
+                }
+
+                .post-toc-expand {
+                    display: list-item;
+                }
+
+                .active>a {
+                    border-left: 7px solid white;
+                    padding-left: 8px;
+                    margin-left: -10px;
+                    background: rgba(228, 228, 228, 0.61);
+                    display: block;
+                }
+
+                li {
+                    margin: 4px 0;
+                    padding-top: 6px;
+                    padding-left: 15px;
+                    padding-bottom: 6px;
+                    color: #333;
+                }
+            }
+        }
+    }
+}

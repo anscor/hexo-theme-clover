@@ -1,3 +1,11 @@
+<aside id="toc-aside">
+  <nav id="toc-nav">
+    <%- toc(page.content, {
+            class: 'post-toc',
+            list_number: true
+          }) %>
+  </nav>
+</aside>
 <section class="article">
   <h2 class="title"><%= post.title %></h2>
   <p class="sub"><%- date(post.date, 'MMM D, YYYY') %></p>

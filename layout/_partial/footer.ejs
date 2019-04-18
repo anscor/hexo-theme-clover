@@ -10,10 +10,22 @@
   <span class="copyright"><%= theme.copyright %></span>
   <%- js('jquery-3.3.1.min.js') %>
   <%- js('/plugins/prettify/prettify.js') %>
+  <%- js('toc.js') %>
   <script type="text/javascript">
     $(document).ready(function () {
       $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
       prettyPrint();
+
+      $('#toc-nav').css('max-width', window.screen.availWidth * 0.15);
+
+      if (window.pageYOffset >= 200) {
+        $('#toc-nav').css('top', 40);
+        $('#toc-nav').css('position', 'fixed');
+      }
+      else {
+        $('#toc-nav').css('top', $('.article').offset().top);
+        $('#toc-nav').css('position', 'absolute');
+      }
     });
   </script>
 </footer>
