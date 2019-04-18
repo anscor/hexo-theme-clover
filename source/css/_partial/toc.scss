@@ -2,7 +2,7 @@
     #toc-aside {
         float: right;
         #toc-nav {
-            padding-left: 15px;
+            padding-left: 10px;
             max-width: 13%;
 
             .post-toc {
@@ -18,8 +18,10 @@
 
                 .active>a {
                     border-left: 7px solid white;
-                    padding-left: 8px;
+                    padding-left: 10px;
                     margin-left: -10px;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
                     background: rgba(228, 228, 228, 0.61);
                     display: block;
                 }
