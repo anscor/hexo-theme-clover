@@ -1,6 +1,7 @@
 #main {
     #toc-aside {
         float: right;
+
         #toc-nav {
             padding-left: 10px;
             max-width: 13%;
@@ -17,12 +18,11 @@
                 }
 
                 .active>a {
-                    border-left: 7px solid white;
                     padding-left: 10px;
                     margin-left: -10px;
                     padding-top: 6px;
                     padding-bottom: 6px;
-                    background: rgba(228, 228, 228, 0.61);
+                    background: #b6b6b6;
                     display: block;
                 }
 
